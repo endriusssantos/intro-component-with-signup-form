@@ -1,0 +1,63 @@
+@media (max-width: 425px) {
+    body {
+        overflow: visible;
+    }
+    .container {
+        background-image: url(../images/bg-intro-mobile.png);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .left-itens {
+        width: 100%;
+        padding: 90px 0 70px;
+    }
+
+    .container .left-itens .title {
+        font-size: 30px;
+    }
+
+    .container .left-itens .description {
+        font-size: 18px;
+        padding: 30px 10px 0;
+    }
+
+    .container .right-itens {
+        background-color: hsl(0, 100%, 74%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .right-itens .value-container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container .right-itens .value-container .value {
+        width: 70%;
+    }
+
+    .container .right-itens .container-input {
+        width: 90%;
+        height: 460px;
+        margin-bottom: 70px;
+        gap: 5px;
+    }
+
+    .container .right-itens .container-input .btn {
+        margin: 10px 0;
+        height: 70px;
+    }
+
+    .container .right-itens .container-input .description  {
+        width: 90%;
+    }
+
+    .container .right-itens .container-input .input.error-input {
+        background-position: 260px;
+    }
+}

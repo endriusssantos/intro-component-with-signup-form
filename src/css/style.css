@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container .left-itens {
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 0 50px 0 150px;
+}
+
+.container .left-itens .title {
+    font-size: 40px;
+    max-width: 400px;
+    line-height: 45px;
+}
+
+.container .left-itens .description {
+    max-width: 500px;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.container .right-itens {
+    width: 50%;
+}
+
+.container .right-itens .value-container {
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 9px 0px 0px rgba(0,0,0,0.1);
+}
+
+.container .right-itens .value-container .value {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container .right-itens .container-input {
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 9px 0px 0px rgba(0,0,0,0.1);
+}
+
+.container .right-itens .container-input .input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    width: 90%;
+    height: 50px;
+    border: 1px hsl(246, 25%, 77%) solid;
+    border-radius: 4px;
+    padding-left: 30px;
+}
+
+.container .right-itens .container-input .input:first-child {
+    margin-top: 40px;
+}
+
+.container .right-itens .container-input .input:focus {
+    outline: none;
+    border: 2px hsl(248, 32%, 49%) solid;
+}
+
+.container .right-itens .container-input .btn {
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 4px;
+    width: 90%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 0px 0px hsl(154, 58%, 44%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .right-itens .container-input .btn:hover {
+    opacity: 0.5;
+}
+
+.container .right-itens .container-input .description {
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .right-itens .container-input .description .link {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container .right-itens .container-input .error {
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    display: none;
+}
+
+.container .right-itens .container-input .error .mensage {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container .right-itens .container-input .input.error-input {
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 480px;
+    border: 2px hsl(0, 100%, 74%) solid;
+}
+
+.placeholder-red::placeholder {
+    color: hsl(0, 100%, 74%);
+}

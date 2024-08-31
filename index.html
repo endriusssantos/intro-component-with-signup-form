@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro Component With Sign Up Form</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="left-itens">
+            <h1 class="title">Learn to code by watching others</h1>
+            <p class="description">See how experienced developers solve problems in real-time. Watching scripted
+                tutorials
+                is great,
+                but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="right-itens">
+            <div class="value-container">
+                <h2 class="value"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
+            </div>
+            <div class="container-input">
+                <input type="text" name="first-name" placeholder="First Name" class="input" id="inputFirstName">
+                <div class="error" id="errorFirstName">
+                    <p class="mensage">First Name cannot be empty</p>
+                </div>
+                <input type="text" name="last-name" placeholder="Last Name" class="input" id="inputLastName">
+                <div class="error" id="errorLastName">
+                    <p class="mensage">Last Name cannot be empty</p>
+                </div>
+                <input type="email" name="email" placeholder="Email Address" class="input" id="inputEmail">
+                <div class="error" id="errorEmail">
+                    <p class="mensage">Looks like this is not an email</p>
+                </div>
+                <input type="password" name="password" placeholder="Password" class="input" id="inputPassword">
+                <div class="error" id="errorPassword">
+                    <p class="mensage">Password cannot be empty</p>
+                </div>
+                <button class="btn" id="btn">claim your free trial</button>
+                <p class="description">By clicking the button, you are agreeing to our <a href="#" class="link">Terms
+                        and
+                        Services</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
