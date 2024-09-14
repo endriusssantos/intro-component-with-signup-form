@@ -7,9 +7,10 @@ const errorFirstName = document.getElementById('errorFirstName');
 const errorLastName = document.getElementById('errorLastName');
 const errorEmail = document.getElementById('errorEmail');
 const errorPassword = document.getElementById('errorPassword');
-const inputValue = inputEmail.value.trim();
 
 btn.addEventListener('click', () => {
+    const inputValue = inputEmail.value.trim();
+    
     if (inputFirstName.value === '') {
         errorFirstName.style.display = 'inline-flex';
         inputFirstName.placeholder = '';
